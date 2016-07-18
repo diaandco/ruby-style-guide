@@ -596,9 +596,9 @@ Translations of the guide are available in the following languages:
     empty line between the comment block and the `def`.
 <sup>[[link](#rdoc-conventions)]</sup>
 
-* <a name="80-character-limits"></a>
-  Limit lines to 80 characters.
-<sup>[[link](#80-character-limits)]</sup>
+* <a name="120-character-limits"></a>
+  Limit lines to 120 characters.
+<sup>[[link](#120-character-limits)]</sup>
 
 * <a name="no-trailing-whitespace"></a>
   Avoid trailing whitespace.
@@ -3586,16 +3586,16 @@ resource cleanup when possible.
   ```Ruby
   # bad - uses DateTime for current time
   DateTime.now
-  
+
   # good - uses Time for current time
   Time.now
-  
+
   # bad - uses DateTime for modern date
   DateTime.iso8601('2016-06-29')
-  
+
   # good - uses Date for modern date
   Date.iso8601('2016-06-29')
-  
+
   # good - uses DateTime with start argument for historical date
   DateTime.iso8601('1751-04-23', Date::ENGLAND)
   ```
